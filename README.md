@@ -4,6 +4,10 @@
 <img src="https://github.com/AcidicSoil/RPG/blob/main/share/screenshots/ZeroRepo-pipeline.png" alt="ZeroRepo-pipeline-Framework" />
 </p>
 
+<p>
+<img src="https://github.com/AcidicSoil/RPG/blob/main/share/screenshots/RepositoryPlanningGraph.png" alt="RepositoryPlanningGraph" />
+</p>
+
 ```bash
 1. Introduction
    • Frames the gap between NL plans and whole-repo synthesis; proposes RPG as a persistent graph unifying proposal + implementation; introduces ZeroRepo pipeline and headline results on RepoCraft.
@@ -114,6 +118,13 @@ E.4 Localization Behavior
 ## Umbrella terms
 
 **Reusable cheat sheet — “Key ideas & how to apply them.”**
+
+To address the ambiguity of natural language plans, we propose the Repository Planning Graph (RPG), a structured
+representation that encodes repository functionality and implementation logic as nodes and edges. Building on RPG, we
+develop ZeroRepo, a framework for repository generation from scratch. This section first introduces the structure of RPG
+(§3.1), and then explains how ZeroRepo constructs it through proposal-level planning (§3.2) and implementation-level
+refinement (§3.3). The overall pipeline is shown in Figure 1(A-B).
+
 
 Analysis of Novelty Examples The novelty cases illustrate two key observations. First, novelty captures meaningful
 extensions rather than random noise: in MLKit-Py, we see coherent additions such as Prophet forecasting, STL
