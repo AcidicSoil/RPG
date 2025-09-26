@@ -1,7 +1,7 @@
 # RPG Starter
 
 <p>
-<img src="https://github.com/AcidicSoil/RPG/raw/HEAD/shared/screenshots/ZeroRepo-pipeline.png" alt="ZeroRepo-pipeline-Framework" />
+<img src="https://github.com/AcidicSoil/RPG/blob/main/share/screenshots/ZeroRepo-pipeline.png" alt="ZeroRepo-pipeline-Framework" />
 </p>
 
 
