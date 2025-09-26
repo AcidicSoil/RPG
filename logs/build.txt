@@ -1,0 +1,28 @@
+
+> rpg-starter@0.1.0 build /c/Users/user/projects/rpg-starter
+> tsc -p tsconfig.json
+
+node_modules/.pnpm/@modelcontextprotocol+sdk@1.18.2/node_modules/@modelcontextprotocol/sdk/dist/esm/server/stdio.d.ts(1,36): error TS2307: Cannot find module 'node:stream' or its corresponding type declarations.
+node_modules/.pnpm/@modelcontextprotocol+sdk@1.18.2/node_modules/@modelcontextprotocol/sdk/dist/esm/server/stdio.d.ts(18,22): error TS2580: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/cli/rpgctl.ts(5,16): error TS2307: Cannot find module 'node:fs' or its corresponding type declarations.
+src/cli/rpgctl.ts(6,10): error TS2305: Module '"yaml"' has no exported member 'load'.
+src/cli/rpgctl.ts(17,27): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/cli/rpgctl.ts(26,22): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/cli/rpgctl.ts(31,27): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/cli/rpgctl.ts(37,27): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/cli/rpgctl.ts(43,27): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/cli/rpgctl.ts(50,14): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/cli/rpgctl.ts(54,3): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/core/schema.ts(6,20): error TS2732: Cannot find module '../assets/rpg.schema.json'. Consider using '--resolveJsonModule' to import module with '.json' extension.
+src/core/schema.ts(6,48): error TS2821: Import assertions are only supported when the '--module' option is set to 'esnext', 'node18', 'node20', 'nodenext', or 'preserve'.
+src/mcp/server.ts(5,16): error TS2307: Cannot find module 'node:fs' or its corresponding type declarations.
+src/mcp/server.ts(6,10): error TS2305: Module '"yaml"' has no exported member 'load'.
+src/mcp/server.ts(19,3): error TS2353: Object literal may only specify known properties, and 'inputSchema' does not exist in type '(extra: RequestHandlerExtra<ServerRequest, ServerNotification>) => { [x: string]: unknown; content: ({ [x: string]: unknown; type: "text"; text: string; _meta?: { ...; } | undefined; } | { ...; } | { ...; } | { ...; } | { ...; })[]; _meta?: { ...; } | undefined; structuredContent?: { ...; } | undefined; isError?: bo...'.
+src/mcp/server.ts(20,21): error TS7031: Binding element 'rpgPath' implicitly has an 'any' type.
+src/mcp/server.ts(28,3): error TS2353: Object literal may only specify known properties, and 'inputSchema' does not exist in type '(extra: RequestHandlerExtra<ServerRequest, ServerNotification>) => { [x: string]: unknown; content: ({ [x: string]: unknown; type: "text"; text: string; _meta?: { ...; } | undefined; } | { ...; } | { ...; } | { ...; } | { ...; })[]; _meta?: { ...; } | undefined; structuredContent?: { ...; } | undefined; isError?: bo...'.
+src/mcp/server.ts(29,21): error TS7031: Binding element 'rpgPath' implicitly has an 'any' type.
+src/mcp/server.ts(37,3): error TS2353: Object literal may only specify known properties, and 'inputSchema' does not exist in type '(extra: RequestHandlerExtra<ServerRequest, ServerNotification>) => { [x: string]: unknown; content: ({ [x: string]: unknown; type: "text"; text: string; _meta?: { ...; } | undefined; } | { ...; } | { ...; } | { ...; } | { ...; })[]; _meta?: { ...; } | undefined; structuredContent?: { ...; } | undefined; isError?: bo...'.
+src/mcp/server.ts(38,21): error TS7031: Binding element 'rpgPath' implicitly has an 'any' type.
+src/mcp/server.ts(38,30): error TS7031: Binding element 'only' implicitly has an 'any' type.
+src/mcp/server.ts(46,8): error TS2554: Expected 3-4 arguments, but got 2.
+ ELIFECYCLE  Command failed with exit code 2.
