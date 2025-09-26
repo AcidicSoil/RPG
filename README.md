@@ -1,5 +1,121 @@
 # RPG Starter
 
+```mermaid
+mindmap
+  root((RPG Paper • Section Map))
+    1. Introduction
+    2. Related Work
+    3. Repository Planning Graph Construction
+      3.1 Repository Planning Graph Structure
+      3.2 Proposal-Level Construction
+      3.3 Implementation-Level Construction
+        3.3.1 File Structure Encoding
+        3.3.2 Data Flow and Functions Encoding
+    4. Graph-Guided Code Generation
+    5. Experiment Setup
+      5.1 RepoCraft Benchmark
+        5.1.1 Reference Repository Selection
+        5.1.2 Metrics
+        5.1.3 Functional Task Construction and Evaluation
+      5.2 Baselines
+      5.3 Implementation Details
+    6. Main Results
+    7. Analysis
+      7.1 Analysis of the RPG’s Scalability
+      7.2 Analysis of RPG’s Stability and Innovation Potential
+      7.3 Analysis of Graph-Guided Localization
+    8. Conclusion
+    Appendices
+      A. Appendix of Proposal-Level Graph Construction
+        A.1 Algorithms of Functionality Graph Construction
+        A.2 Detailed Construction Process
+        A.3 Prompt Template
+      B. Appendix of Implementation-Level Graph Construction
+        B.1 Prompt Template for Implementation-Level Graph Construction
+        B.2 Case of Built Skeleton and Designed Interfaces
+        B.3 Patterns in Implementation-Level Graph Construction
+      C. Appendix of Graph-Guided Repository Generation
+        C.1 Details on Localization
+        C.2 Tools for Coding
+        C.3 Graph-Guided Localization and Editing Logs
+        C.4 Testing Framework
+        C.5 Statistics of Three Stage
+      D. Details about RepoCraft Benchmark
+        D.1 Repositories Selection
+        D.2 Evaluation Tasks Collection
+        D.3 Agent Pipeline
+          D.3.1 Metrics
+        D.4 Ground-Truth Taxonomy for Coverage and Novelty Calculation
+      E. Experiment Results
+        E.1 Baseline Configurations
+        E.2 Detailed Experiment Results
+        E.3 Examples of Coverage Calculation and Novelty Assessment
+        E.4 Examples of Localization Behavior
+```
+```mermaid
+mindmap
+  root((RPG: Unified & Scalable Codebase Generation))
+    Introduction
+      ::icon(fa fa-lightbulb)
+      ("Problem: NL planning is ambiguous for repo-scale generation")
+      ("Solution: Repository Planning Graph (RPG) as persistent, structured plan")
+      ("ZeroRepo: builds RPG then generates code/tests")
+    Related Work
+      ("Multi-agent roles & SOPs (e.g., ChatDev/MetaGPT)")
+      ("Workflow/staged systems (Paper2Code)")
+      ("Terminal agents (Codex/Gemini/Claude/OpenHands)")
+      ("Limitation: reliance on free-form natural language plans")
+    Repository Planning Graph Construction
+      ("3.1 RPG Structure")
+        ("Dual semantics: capabilities ↔ artifacts (folders/files/classes/functions)")
+        ("Edges: inter-module data flows + intra-module orderings (topo constraints)")
+      ("3.2 Proposal-Level Construction")
+        ("Ground in large Feature Tree; explore–exploit retrieval")
+        ("Partition by cohesion/coupling; refactor into functionality graph")
+      ("3.3 Implementation-Level Construction")
+        ("3.3.1 File Structure Encoding → folder/file skeleton")
+        ("3.3.2 Data Flow & Functions Encoding → typed I/O, base classes, interfaces")
+    Graph-Guided Code Generation
+      ("Traverse RPG in topological order")
+      ("TDD at each leaf: gen test → implement → validate")
+      ("Graph-guided localization: search, code view, dependency explorer")
+      ("Stage gates: unit → regression → integration tests")
+    Experiment Setup
+      RepoCraft Benchmark
+        ("6 real projects (sklearn, pandas, sympy, statsmodels, requests, django)")
+        ("1,052 tasks; anonymized names; task-level eval")
+      Metrics
+        ("Coverage (functional categories hit)")
+        ("Novelty (OOD features beyond taxonomy)")
+        ("Accuracy: Pass rate & Voting rate")
+        ("Scale: files, normalized LOC, token count")
+      Baselines & Details
+        ("Baselines: MetaGPT, ChatDev, Paper2Code, Codex, Gemini CLI, Claude Code, OpenHands")
+        ("30 planning/generation iterations; localization/test pipelines")
+    Main Results
+      ("Coverage up to ~81.5% (o3-mini)")
+      ("Pass rate ~69.7% (o3-mini)")
+      ("Repo size ~36K LOC (Qwen3)")
+      ("Outperforms strongest baseline on coverage/pass; much larger repos")
+    Analysis
+      Scalability
+        ("Near-linear growth of features & LOC across iterations")
+      Stability & Innovation
+        ("Sustained coverage gains; meaningful novelty (~8–13% cases)")
+      Localization
+        ("Graph guidance cuts localization steps by ~30–50%")
+    Conclusion
+      ("RPG = durable planning substrate + coherent generation")
+      ("Enables long-horizon repo synthesis; better scaling, fidelity, localization")
+    Appendices (How-to & Artifacts)
+      ("A: Proposal-level algorithms, process, prompt templates")
+      ("B: Impl-level prompts, skeleton/interface cases, patterns")
+      ("C: Graph-guided localization tools, editing logs, testing framework")
+      ("D: RepoCraft details, taxonomy for coverage/novelty")
+      ("E: Full results, baseline configs, coverage/novelty examples")
+```
+
+
 <p>
 <img src="https://github.com/AcidicSoil/RPG/blob/main/share/screenshots/ZeroRepo-pipeline.png" alt="ZeroRepo-pipeline-Framework" />
 </p>
