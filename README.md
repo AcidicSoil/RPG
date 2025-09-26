@@ -67,7 +67,24 @@ mindmap
 
 
 ```mermaid
-%%{init: {"flowchart": {"htmlLabels": false}} }%%
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "darkMode": true,
+    "background": "#0b1220",
+    "textColor": "#e5e7eb",
+    "primaryColor": "#111827",
+    "primaryTextColor": "#e5e7eb",
+    "secondaryColor": "#0f172a",
+    "secondaryTextColor": "#e5e7eb",
+    "tertiaryColor": "#0b1220",
+    "lineColor": "#94a3b8",
+    "edgeLabelBackground": "#0b1220",
+    "fontFamily": "Inter, ui-sans-serif, system-ui, Segoe UI, Arial",
+    "fontSize": "15px"
+  },
+  "themeCSS": ".mindmap-node rect, .mindmap-node circle, .mindmap-node path{stroke:#334155} .edgePaths path{stroke:#94a3b8}"
+}}%%
 flowchart TB
   A[Start / Project Spec\nDomain, Lang/Runtime, Policies\nDependencies, Nonfunctional reqs] --> B
 
@@ -105,6 +122,24 @@ flowchart TB
 ```
 
 ```mermaid
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "darkMode": true,
+    "background": "#0b1220",
+    "textColor": "#e5e7eb",
+    "primaryColor": "#111827",
+    "primaryTextColor": "#e5e7eb",
+    "secondaryColor": "#0f172a",
+    "secondaryTextColor": "#e5e7eb",
+    "tertiaryColor": "#0b1220",
+    "lineColor": "#94a3b8",
+    "edgeLabelBackground": "#0b1220",
+    "fontFamily": "Inter, ui-sans-serif, system-ui, Segoe UI, Arial",
+    "fontSize": "15px"
+  },
+  "themeCSS": ".mindmap-node rect, .mindmap-node circle, .mindmap-node path{stroke:#334155} .edgePaths path{stroke:#94a3b8}"
+}}%%
 mindmap
   root((RPG Paper • Section Map))
     1. Introduction
@@ -158,6 +193,24 @@ mindmap
 ```
 
 ```mermaid
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "darkMode": true,
+    "background": "#0b1220",
+    "textColor": "#e5e7eb",
+    "primaryColor": "#111827",
+    "primaryTextColor": "#e5e7eb",
+    "secondaryColor": "#0f172a",
+    "secondaryTextColor": "#e5e7eb",
+    "tertiaryColor": "#0b1220",
+    "lineColor": "#94a3b8",
+    "edgeLabelBackground": "#0b1220",
+    "fontFamily": "Inter, ui-sans-serif, system-ui, Segoe UI, Arial",
+    "fontSize": "15px"
+  },
+  "themeCSS": ".mindmap-node rect, .mindmap-node circle, .mindmap-node path{stroke:#334155} .edgePaths path{stroke:#94a3b8}"
+}}%%
 mindmap
   root((RPG: Unified & Scalable Codebase Generation))
     Introduction
