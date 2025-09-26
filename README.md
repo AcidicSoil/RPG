@@ -1,5 +1,9 @@
 # RPG Starter
 
+<p>
+<img src="https://github.com/AcidicSoil/RPG/raw/HEAD/shared/screenshots/ZeroRepo-pipeline.png" alt="ZeroRepo-pipeline-Framework" />
+</p>
+
 
 ```bash
 Here’s the paper’s section taxonomy (top-level → subsections), extracted from the PDF.
