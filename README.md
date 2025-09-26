@@ -1,6 +1,44 @@
 # RPG Starter
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart TB
+  A[Start / Project Spec\nDomain, Lang/Runtime, Policies\nDependencies, Nonfunctional reqs] --> B
+
+  subgraph S1[STAGE 1 - Proposal Level]
+    B[Create empty RPG DAG\nNode schema, required fields, acyclic] --> C
+    C[Retrieve features from taxonomy or corpus\nExploit top k, explore new branches] --> D
+    D[Partition into modules\nMax cohesion, min coupling\nRemove overlaps and orphans] --> E
+    E[Functionality graph ready\nCapabilities to modules\nDraft inter module deps]
+  end
+
+  subgraph S2[STAGE 2 - Implementation Level]
+    E --> F[Encode file and folder skeleton\nMap modules to folders and files\nDiff only, no code]
+    F --> G[Encode data flows and interfaces\nTyped IO, base classes, concrete funcs\nOrder constraints]
+    G --> H{Validation gates\nDAG and dep closure\nSchema completeness\nType and IO sanity\nModule boundaries}
+  end
+
+  H -- pass --> I[Freeze RPG v1 as source of truth]
+  H -- fail --> Hfix[Refactor nodes, edges, signatures\nRun validators again] --> H
+
+  subgraph S3[STAGE 3 - Graph Guided Codegen]
+    I --> J[Topological traverse leaves]
+    J --> K[Per node TDD loop\nStep 1 - generate unit test\nStep 2 - minimal implementation\nStep 3 - run tests]
+    K --> L{Tests pass}
+    L -- no --> Kfix[Localize with graph tools\nSearch by capability, view interfaces, dep explorer\nPatch and retest] --> K
+    L -- yes --> M[Commit node]
+    M --> N{Subgraph complete}
+    N -- yes --> O[Run integration and regression tests]
+    N -- no --> J
+  end
+
+  O --> P[CI and metrics dashboard\nCoverage, novelty, pass or vote, scale]
+  P --> Q[Persist RPG and logs\nVersioned RPG, edit and localization logs, test artifacts]
+  Q --> R[Iterate\nAdmit OOD features in novelty lane\nContract aware edits]
+
+```
+
+```mermaid
 mindmap
   root((RPG Paper • Section Map))
     1. Introduction
@@ -52,6 +90,7 @@ mindmap
         E.3 Examples of Coverage Calculation and Novelty Assessment
         E.4 Examples of Localization Behavior
 ```
+
 ```mermaid
 mindmap
   root((RPG: Unified & Scalable Codebase Generation))
@@ -114,6 +153,7 @@ mindmap
       ("D: RepoCraft details, taxonomy for coverage/novelty")
       ("E: Full results, baseline configs, coverage/novelty examples")
 ```
+
 
 
 <p>
