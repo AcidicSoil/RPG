@@ -1,5 +1,71 @@
 # RPG Starter
 
+
+
+```mermaid
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "darkMode": true,
+    "background": "#0b1220",
+    "textColor": "#e5e7eb",
+    "primaryColor": "#111827",
+    "primaryTextColor": "#e5e7eb",
+    "secondaryColor": "#0f172a",
+    "secondaryTextColor": "#e5e7eb",
+    "tertiaryColor": "#0b1220",
+    "lineColor": "#94a3b8",
+    "edgeLabelBackground": "#0b1220",
+    "fontFamily": "Inter, ui-sans-serif, system-ui, Segoe UI, Arial",
+    "fontSize": "15px"
+  },
+  "themeCSS": ".mindmap-node rect, .mindmap-node circle, .mindmap-node path{stroke:#334155} .edgePaths path{stroke:#94a3b8}"
+}}%%
+mindmap
+  root((Set up RPG / ZeroRepo Flow))
+    0. Prepare
+      ("Define project spec + constraints")
+      ("Adopt RPG as single source of truth")
+      ("Choose model(s) + runtime + test harness")
+    1. Initialize RPG
+      ("Create empty DAG with node schema")
+      ("Node kinds: capability, folder, file, class, function")
+      ("Fields: id, kind, path/name, signature, I/O, deps, tests, status")
+      ("Hard rule: no code until graph validates")
+    2. Proposal-Level Construction
+      ("Retrieve features from large Feature Tree (exploit/explore)")
+      ("Refactor into modular functionality graph")
+      ("Partition by cohesion/coupling; remove overlaps/orphans")
+      ("Outputs: capability nodes + initial deps")
+    3. Implementation-Level Construction
+      ("3.3.1 File Structure Encoding → skeleton diff (folders/files)")
+      ("3.3.2 Data Flow & Functions → typed I/O, base classes, interfaces")
+      ("Add intra-module order constraints & inter-module flows")
+      ("Outputs: file/class/function nodes with signatures")
+    4. Validate RPG (Readiness Gates)
+      ("DAG/acyclicity check")
+      ("Required fields & dependency closure")
+      ("Type/signature sanity; module boundary integrity")
+      ("Skeleton path consistency")
+      ("If any gate fails → FIX GRAPH (no code yet)")
+    5. Graph-Guided Generation (TDD loop)
+      ("Topological traversal of RPG")
+      ("Per leaf: generate unit test → implement minimal code → pass")
+      ("Graph-guided localization for failures (search/code/deps)")
+      ("Commit only passing nodes; then boundary/integration tests")
+    6. CI & Metrics (RepoCraft-style)
+      ("Track Coverage, Novelty, Pass/Vote Accuracy, Scale (files/LOC/tokens)")
+      ("Watch near-linear growth; trigger audit if slope decays")
+      ("Persist RPG + logs; iterate")
+    7. Deliverables
+      ("Passing repo + tests")
+      ("RPG (proposal+implementation) persisted as artifact")
+      ("Dashboards + localization/edit logs")
+
+
+```
+
+
 ```mermaid
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart TB
