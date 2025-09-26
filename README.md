@@ -4,7 +4,7 @@
 
 ```mermaid
 %%{init: {
-  "theme": "base",
+  "theme": "",
   "themeVariables": {
     "darkMode": true,
     "background": "#0b1220",
@@ -68,7 +68,7 @@ mindmap
 
 ```mermaid
 %%{init: {
-  "theme": "base",
+  "theme": "",
   "themeVariables": {
     "darkMode": true,
     "background": "#0b1220",
@@ -123,7 +123,7 @@ flowchart TB
 
 ```mermaid
 %%{init: {
-  "theme": "base",
+  "theme": "",
   "themeVariables": {
     "darkMode": true,
     "background": "#0b1220",
@@ -194,7 +194,7 @@ mindmap
 
 ```mermaid
 %%{init: {
-  "theme": "base",
+  "theme": "",
   "themeVariables": {
     "darkMode": true,
     "background": "#0b1220",
