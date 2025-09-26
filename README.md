@@ -1,5 +1,61 @@
 # RPG Starter
 
+
+```bash
+Here’s the paper’s section taxonomy (top-level → subsections), extracted from the PDF.
+
+1. Introduction
+2. Related Work
+3. Repository Planning Graph Construction
+   3.1 Repository Planning Graph Structure
+   3.2 Proposal-Level Construction
+   3.3 Implementation-Level Construction
+   • 3.3.1 File Structure Encoding
+   • 3.3.2 Data Flow and Functions Encoding
+4. Graph-Guided Code Generation
+5. Experiment Setup
+   5.1 RepoCraft Benchmark
+   • 5.1.1 Reference Repository Selection
+   • 5.1.2 Metrics
+   • 5.1.3 Functional Task Construction and Evaluation
+   5.2 Baselines
+   5.3 Implementation Details
+6. Main Results
+7. Analysis
+   7.1 Analysis of the RPG’s Scalability
+   7.2 Analysis of RPG’s Stability and Innovation Potential
+   7.3 Analysis of Graph-Guided Localization
+8. Conclusion
+
+Appendices
+A. Appendix of Proposal-Level Graph Construction
+A.1 Algorithms of Functionality Graph Construction
+A.2 Detailed Construction Process
+A.3 Prompt Template
+B. Appendix of Implementation-Level Graph Construction
+B.1 Prompt Template for Implementation-Level Graph Construction
+B.2 Case of Built Skeleton and Designed Interfaces
+B.3 Patterns in Implementation-Level Graph Construction
+C. Appendix of Graph-Guided Repository Generation
+C.1 Details on Localization
+C.2 Tools for Coding
+C.3 Graph-Guided Localization and Editing Logs
+C.4 Testing Framework
+C.5 Statistics of Three Stage
+D. Details about RepoCraft Benchmark
+D.1 Repositories Selection
+D.2 Evaluation Tasks Collection
+D.3 Agent Pipeline
+D.3.1 Metrics
+D.4 Ground-Truth Taxonomy for Coverage and Novelty Calculation
+E. Experiment Results
+E.1 Baseline Configurations
+E.2 Detailed Experiment Results
+E.3 Examples of Coverage Calculation and Novelty Assessment
+E.4 Examples of Localization Behavior
+```
+
+
 ## Umbrella terms
 
 **Reusable cheat sheet — “Key ideas & how to apply them.”**
