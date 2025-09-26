@@ -200,7 +200,7 @@ mindmap
     "background": "#0b1220",
     "textColor": "#e5e7eb",
     "primaryColor": "#111827",
-    "primaryTextColor": "#000000",
+    "primaryTextColor": "#e5e7eb",
     "secondaryColor": "#0f172a",
     "secondaryTextColor": "#e5e7eb",
     "tertiaryColor": "#0b1220",
